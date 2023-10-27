@@ -1,0 +1,54 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore virtual environment folders
+venv/
+env/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Docker build context
+docker/version1/__pycache__/
+docker/version2/__pycache__/
+docker/version3/__pycache__/
+
+# Ignore Docker images (if you don't want to track built images)
+docker/version1/app
+docker/version2/app
+docker/version3/app
+
+# Ignore Kubernetes configuration files with sensitive data (e.g., secrets)
+k8s/version1/secrets.yaml
+k8s/version2/secrets.yaml
+k8s/version3/secrets.yaml
+
+# Ignore logs and other runtime files
+*.log
+*.log.*
+*.swp
+.DS_Store
+
+# Ignore editor-specific files
+.idea/
+.vscode/
+
+# Ignore operating system and IDE-generated files
+Thumbs.db
+.DS_Store
+
+# Ignore any local environment files
+.env
+.env.*
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.out
+
+# Ignore package-lock.json for Node.js projects
+package-lock.json
+
