@@ -1,0 +1,19 @@
+# k8s/version2/deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-version2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app-version2
+  template:
+    metadata:
+      labels:
+        app: my-app-version2
+    spec:
+      containers:
+      - name: my-app-version2
+        image: my-docker-repo/version2
